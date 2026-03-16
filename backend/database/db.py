@@ -1,31 +1,33 @@
 from pymongo import MongoClient
 import os
-import ssl
 import traceback
+import ssl
 
 # Get MongoDB URI from environment variable
 MONGO_URI = os.environ.get('MONGO_URI', 'mongodb://localhost:27017/')
 DB_NAME = "music_recommender_db"
 
 try:
-    print(f"Attempting to connect to MongoDB with TLS 1.2...")
+    print(f"Attempting to connect to MongoDB...")
+    print(f"Using connection string: {MONGO_URI[:50]}...")  # Print first 50 chars for debugging
     
-    # Create a custom SSL context that forces TLS 1.2
-    ssl_context = ssl.SSLContext(ssl.PROTOCOL_TLS_CLIENT)
-    ssl_context.minimum_version = ssl.TLSVersion.TLSv1_2
-    ssl_context.maximum_version = ssl.TLSVersion.TLSv1_2
-    ssl_context.check_hostname = False
-    ssl_context.verify_mode = ssl.CERT_NONE
+    # Create SSL context
+    ssl_ctx = ssl.create_default_context()
+    ssl_ctx.check_hostname = False
+    ssl_ctx.verify_mode = ssl.CERT_NONE
     
-    # Connect with explicit SSL context
-    client = MongoClient(MONGO_URI,
-                        serverSelectionTimeoutMS=30000,
-                        connectTimeoutMS=30000,
-                        socketTimeoutMS=30000,
-                        ssl=True,
-                        ssl_context=ssl_context)
+    # Connect with SSL options
+    client = MongoClient(
+        MONGO_URI,
+        serverSelectionTimeoutMS=30000,
+        connectTimeoutMS=30000,
+        socketTimeoutMS=30000,
+        ssl=True,
+        ssl_cert_reqs=ssl.CERT_NONE,
+        ssl_match_hostname=False
+    )
     
-    # Force a connection to test
+    # Test connection
     client.admin.command('ping')
     print("✅ MongoDB ping successful!")
     
@@ -33,7 +35,7 @@ try:
     songs_collection = db["songs"]
     print("✅ Connected to MongoDB successfully!")
     
-    # Test a simple operation
+    # Test count
     count = songs_collection.count_documents({})
     print(f"✅ Found {count} existing documents")
     
