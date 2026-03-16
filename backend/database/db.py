@@ -1,5 +1,6 @@
 from pymongo import MongoClient
 import os
+import ssl
 import traceback
 
 # Get MongoDB URI from environment variable
@@ -7,12 +8,22 @@ MONGO_URI = os.environ.get('MONGO_URI', 'mongodb://localhost:27017/')
 DB_NAME = "music_recommender_db"
 
 try:
-    print(f"Attempting to connect to MongoDB with SSL disabled...")
+    print(f"Attempting to connect to MongoDB with TLS 1.2...")
     
-    # Add tlsAllowInvalidCertificates=true to bypass SSL issues
-    client = MongoClient(MONGO_URI, 
-                        serverSelectionTimeoutMS=10000,
-                        tlsAllowInvalidCertificates=True)
+    # Create a custom SSL context that forces TLS 1.2
+    ssl_context = ssl.SSLContext(ssl.PROTOCOL_TLS_CLIENT)
+    ssl_context.minimum_version = ssl.TLSVersion.TLSv1_2
+    ssl_context.maximum_version = ssl.TLSVersion.TLSv1_2
+    ssl_context.check_hostname = False
+    ssl_context.verify_mode = ssl.CERT_NONE
+    
+    # Connect with explicit SSL context
+    client = MongoClient(MONGO_URI,
+                        serverSelectionTimeoutMS=30000,
+                        connectTimeoutMS=30000,
+                        socketTimeoutMS=30000,
+                        ssl=True,
+                        ssl_context=ssl_context)
     
     # Force a connection to test
     client.admin.command('ping')
