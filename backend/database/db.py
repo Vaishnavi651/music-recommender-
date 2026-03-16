@@ -11,12 +11,7 @@ try:
     print(f"Attempting to connect to MongoDB...")
     print(f"Using connection string: {MONGO_URI[:50]}...")  # Print first 50 chars for debugging
     
-    # Create SSL context
-    ssl_ctx = ssl.create_default_context()
-    ssl_ctx.check_hostname = False
-    ssl_ctx.verify_mode = ssl.CERT_NONE
-    
-    # Connect with SSL options
+    # Connect with SSL options (NO ssl_context parameter!)
     client = MongoClient(
         MONGO_URI,
         serverSelectionTimeoutMS=30000,
