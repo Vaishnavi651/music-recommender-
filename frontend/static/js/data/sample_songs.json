@@ -1,0 +1,226 @@
+[
+    {
+        "title": "Happy",
+        "artist": "Pharrell Williams",
+        "genre": "pop",
+        "mood": "happy",
+        "youtube_url": "https://www.youtube.com/watch?v=ZbZSe6N_BXs",
+        "spotify_url": "https://open.spotify.com/track/60nZcImufyMA1MKQY3dcCH",
+        "features": {
+            "tempo": "fast",
+            "energy": "high",
+            "danceability": "high",
+            "popularity": 95
+        }
+    },
+    {
+        "title": "Can't Stop the Feeling",
+        "artist": "Justin Timberlake",
+        "genre": "pop",
+        "mood": "happy",
+        "youtube_url": "https://www.youtube.com/watch?v=ru0K8uYEZWw",
+        "spotify_url": "https://open.spotify.com/track/1WkMMavIMc4JZ8cfMmxHkI",
+        "features": {
+            "tempo": "fast",
+            "energy": "high",
+            "danceability": "high",
+            "popularity": 92
+        }
+    },
+    {
+        "title": "Good Vibrations",
+        "artist": "Marky Mark",
+        "genre": "pop",
+        "mood": "happy",
+        "youtube_url": "https://www.youtube.com/watch?v=B7p3G2ZbQVs",
+        "spotify_url": "https://open.spotify.com/track/2oXhQ90Wq3R8W0lShP2KHL",
+        "features": {
+            "tempo": "fast",
+            "energy": "high",
+            "danceability": "high",
+            "popularity": 85
+        }
+    },
+    {
+        "title": "Someone Like You",
+        "artist": "Adele",
+        "genre": "pop",
+        "mood": "sad",
+        "youtube_url": "https://www.youtube.com/watch?v=hLQl3WQQoQ0",
+        "spotify_url": "https://open.spotify.com/track/4kflIGfjdZJW4ot2ioixTB",
+        "features": {
+            "tempo": "slow",
+            "energy": "low",
+            "danceability": "low",
+            "popularity": 90
+        }
+    },
+    {
+        "title": "Fix You",
+        "artist": "Coldplay",
+        "genre": "rock",
+        "mood": "sad",
+        "youtube_url": "https://www.youtube.com/watch?v=k4V3Mo61fJM",
+        "spotify_url": "https://open.spotify.com/track/7LVHVU3tWfcxj5aiPFEW4Q",
+        "features": {
+            "tempo": "slow",
+            "energy": "medium",
+            "danceability": "low",
+            "popularity": 94
+        }
+    },
+    {
+        "title": "Hurt",
+        "artist": "Johnny Cash",
+        "genre": "country",
+        "mood": "sad",
+        "youtube_url": "https://www.youtube.com/watch?v=8AHCfZTRGiI",
+        "spotify_url": "https://open.spotify.com/track/28cnXtME493VX9NOw9cIUh",
+        "features": {
+            "tempo": "slow",
+            "energy": "low",
+            "danceability": "low",
+            "popularity": 88
+        }
+    },
+    {
+        "title": "Eye of the Tiger",
+        "artist": "Survivor",
+        "genre": "rock",
+        "mood": "energetic",
+        "youtube_url": "https://www.youtube.com/watch?v=btPJPFnesV4",
+        "spotify_url": "https://open.spotify.com/track/2KH16WveTQWT6KOG9Rg6e2",
+        "features": {
+            "tempo": "fast",
+            "energy": "high",
+            "danceability": "medium",
+            "popularity": 88
+        }
+    },
+    {
+        "title": "Stronger",
+        "artist": "Kanye West",
+        "genre": "hip-hop",
+        "mood": "energetic",
+        "youtube_url": "https://www.youtube.com/watch?v=PsO6ZnUZI0g",
+        "spotify_url": "https://open.spotify.com/track/4fzsfWzRhPawzqhX8Qt9F3",
+        "features": {
+            "tempo": "fast",
+            "energy": "high",
+            "danceability": "high",
+            "popularity": 92
+        }
+    },
+    {
+        "title": "Don't Stop Me Now",
+        "artist": "Queen",
+        "genre": "rock",
+        "mood": "energetic",
+        "youtube_url": "https://www.youtube.com/watch?v=HgzGwKwLmgM",
+        "spotify_url": "https://open.spotify.com/track/5T8EDUDqKcs6OSOwEsfqG7",
+        "features": {
+            "tempo": "fast",
+            "energy": "high",
+            "danceability": "high",
+            "popularity": 96
+        }
+    },
+    {
+        "title": "Weightless",
+        "artist": "Marconi Union",
+        "genre": "electronic",
+        "mood": "relaxed",
+        "youtube_url": "https://www.youtube.com/watch?v=UfcAVejslrU",
+        "spotify_url": "https://open.spotify.com/track/6kkwvBWu6onsWw3bbDeSZK",
+        "features": {
+            "tempo": "slow",
+            "energy": "low",
+            "danceability": "low",
+            "popularity": 75
+        }
+    },
+    {
+        "title": "Clair de Lune",
+        "artist": "Debussy",
+        "genre": "classical",
+        "mood": "relaxed",
+        "youtube_url": "https://www.youtube.com/watch?v=CvFH_6DNRCY",
+        "spotify_url": "https://open.spotify.com/track/5VzeoI43uoPLUuOBeSNo0W",
+        "features": {
+            "tempo": "slow",
+            "energy": "low",
+            "danceability": "low",
+            "popularity": 82
+        }
+    },
+    {
+        "title": "Meditation",
+        "artist": "Yiruma",
+        "genre": "classical",
+        "mood": "relaxed",
+        "youtube_url": "https://www.youtube.com/watch?v=4NfE3rkL0m0",
+        "spotify_url": "https://open.spotify.com/track/4nrwRfiRSfEl5hO7Lp7RMB",
+        "features": {
+            "tempo": "slow",
+            "energy": "low",
+            "danceability": "low",
+            "popularity": 78
+        }
+    },
+    {
+        "title": "Killing in the Name",
+        "artist": "Rage Against the Machine",
+        "genre": "rock",
+        "mood": "angry",
+        "youtube_url": "https://www.youtube.com/watch?v=bWXazVhlyxQ",
+        "spotify_url": "https://open.spotify.com/track/59WN2psjkt1tyaxjspN8fp",
+        "features": {
+            "tempo": "fast",
+            "energy": "high",
+            "danceability": "medium",
+            "popularity": 85
+        }
+    },
+    {
+        "title": "Break Stuff",
+        "artist": "Limp Bizkit",
+        "genre": "metal",
+        "mood": "angry",
+        "youtube_url": "https://www.youtube.com/watch?v=ZpUYjpKg9KY",
+        "spotify_url": "https://open.spotify.com/track/5cZqsjVs6MevCnAkasbEOX",
+        "features": {
+            "tempo": "fast",
+            "energy": "high",
+            "danceability": "medium",
+            "popularity": 83
+        }
+    },
+    {
+        "title": "Blinding Lights",
+        "artist": "The Weeknd",
+        "genre": "pop",
+        "mood": "energetic",
+        "youtube_url": "https://www.youtube.com/watch?v=4NRXx6U8ABQ",
+        "spotify_url": "https://open.spotify.com/track/0VjIjW4GlUZAMYd2vXMi3b",
+        "features": {
+            "tempo": "fast",
+            "energy": "high",
+            "danceability": "high",
+            "popularity": 98
+        }
+    },
+    {
+        "title": "Bohemian Rhapsody",
+        "artist": "Queen",
+        "genre": "rock",
+        "mood": "energetic",
+        "youtube_url": "https://www.youtube.com/watch?v=fJ9rUzIMcZQ",
+        "spotify_url": "https://open.spotify.com/track/3z8h0TU7ReDPLIbEnYhWZb",
+        "features": {
+            "tempo": "mixed",
+            "energy": "high",
+            "danceability": "medium",
+            "popularity": 99
+        }
+    }
+]

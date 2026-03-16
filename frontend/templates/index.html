@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Music Recommendation System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">🎵</span>
+                <span>AI Music Recommender</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/" class="active">Home</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Discover Music That Matches Your Mood</h1>
+                <p>Our AI-powered system recommends the perfect songs based on how you're feeling</p>
+            </div>
+        </section>
+
+        <section class="recommendation-form">
+            <div class="container">
+                <h2>Get Personalized Recommendations</h2>
+                <form id="musicForm">
+                    <div class="form-group">
+                        <label for="mood">How are you feeling today?</label>
+                        <select id="mood" name="mood" required>
+                            <option value="">Select your mood</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="genre">Preferred Genre</label>
+                        <select id="genre" name="genre" required>
+                            <option value="">Select a genre</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn-primary">
+                        <span>Get AI Recommendations</span>
+                        <span class="btn-icon">→</span>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <section id="results" class="results-section" style="display: none;">
+            <div class="container">
+                <h2>Your AI-Powered Recommendations</h2>
+                <div id="moodDescription" class="mood-description"></div>
+                <div id="recommendationsList" class="songs-grid"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 AI Music Recommendation System. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - AI Music Recommendation System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">🎵</span>
+                <span>AI Music Recommender</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about" class="active">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="about-hero">
+            <div class="container">
+                <h1>About the AI Music Recommendation System</h1>
+            </div>
+        </section>
+
+        <section class="about-content">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-card">
+                        <div class="about-icon">🤖</div>
+                        <h3>AI-Powered Recommendations</h3>
+                        <p>Our system uses rule-based AI logic to analyze your mood and genre preferences, providing personalized music recommendations that match your emotional state.</p>
+                    </div>
+
+                    <div class="about-card">
+                        <div class="about-icon">🎯</div>
+                        <h3>How It Works</h3>
+                        <p>The AI evaluates songs based on multiple factors including tempo, energy, danceability, and mood compatibility to find the perfect matches for you.</p>
+                    </div>
+
+                    <div class="about-card">
+                        <div class="about-icon">💾</div>
+                        <h3>Technology Stack</h3>
+                        <p>Built with Flask (Python), MongoDB for data storage, and modern frontend technologies for a seamless user experience.</p>
+                    </div>
+                </div>
+
+                <div class="features-section">
+                    <h2>Key Features</h2>
+                    <ul class="features-list">
+                        <li>🎵 Mood-based music recommendations</li>
+                        <li>🎸 Genre-specific filtering</li>
+                        <li>🤖 AI-powered matching algorithm</li>
+                        <li>📊 Real-time recommendations</li>
+                        <li>💫 Clean and intuitive interface</li>
+                        <li>🚀 Fast and responsive design</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 AI Music Recommendation System. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
